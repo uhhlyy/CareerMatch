@@ -8,27 +8,21 @@ function Roleselection() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-white flex items-center justify-center p-6">
+    <div className="min-h-screen bg-white flex items-center justify-center p-2 sm:p-6">
       
-      {/* Back Button */}
-      <button
-        onClick={() => navigate("/")}
-        className="absolute top-6 left-6 flex items-center gap-2 text-blue-600 font-semibold hover:text-blue-800 transition-colors"
-      >
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-          <path d="M19 12H5M12 19l-7-7 7-7"/>
-        </svg>
-        Back
-      </button>
+    {/* Back button */}
+      {/* Back button removed */}
 
       {/* Card Container */}
-      <div className="w-full h-130 max-w-4xl rounded-2xl shadow-2xl overflow-hidden">
+      <div className="w-full max-w-md sm:max-w-2xl lg:max-w-4xl rounded-2xl shadow-2xl overflow-hidden mx-auto">
+
+        
 
 {/* Main Content - Flex Layout */}
 <div className="flex flex-col lg:flex-row items-stretch bg-white min-h-[400px]">
             
             {/* LEFT SECTION - Image */}
-            <div className="flex-1 flex w-full h-130 justify-center items-center p-8 min-h-full" style={{ backgroundColor: '#2A5298' }}>
+            <div className="flex-1 flex w-full h-48 sm:h-130 justify-center items-center p-4 sm:p-8 min-h-full" style={{ backgroundColor: '#2A5298' }}>
               <img 
                 src={images}
                 alt="Career Matching Illustration"
@@ -37,7 +31,7 @@ function Roleselection() {
             </div>
 
             {/* RIGHT SECTION - Header and Role Selection */}
-            <div className="flex-1 p-8 w-fullh-130" style={{ backgroundColor: '#d9ebf8' }}>
+            <div className="flex-1 p-4 sm:p-8 w-full h-130" style={{ backgroundColor: '#d9ebf8' }}>
               
               {/* Header */}
               <div className="text-center mb-8">
@@ -48,13 +42,13 @@ function Roleselection() {
               </div>
 
               {/* CARDS CONTAINER */}
-              <div className="flex flex-col gap-4 mt-28">
+              <div className="flex flex-col gap-4 mt-10 sm:mt-28">
 
                 {/* JOB SEEKER */}
                 <Link to="/LoginSeeker" className="no-underline">
-                  <div className="bg-gray-50 rounded-xl p-5 flex items-center hover:shadow-xl hover:bg-blue-50 transition-all duration-300 border border-gray-200 hover:border-blue-400">
+                  <div className="bg-gray-50 rounded-xl p-3 sm:p-5 flex items-center hover:shadow-xl hover:bg-blue-50 transition-all duration-300 border border-gray-200 hover:border-blue-400">
                     
-                    <div className="w-[50px] h-[50px] mr-4 shrink-0">
+                    <div className="w-10 h-10 sm:w-[50px] sm:h-[50px] mr-2 sm:mr-4 shrink-0">
                       <img 
                         src={woman}
                         alt="Job Seeker"
@@ -74,9 +68,9 @@ function Roleselection() {
 
                 {/* COMPANY */}
                 <Link to="/LoginCompany" className="no-underline">
-                  <div className="bg-gray-50 rounded-xl p-5 flex items-center hover:shadow-xl hover:bg-blue-50 transition-all duration-300 border border-gray-200 hover:border-blue-400">
+                  <div className="bg-gray-50 rounded-xl p-3 sm:p-5 flex items-center hover:shadow-xl hover:bg-blue-50 transition-all duration-300 border border-gray-200 hover:border-blue-400">
                     
-                    <div className="w-[50px] h-[50px] mr-4 shrink-0">
+                    <div className="w-10 h-10 sm:w-[50px] sm:h-[50px] mr-2 sm:mr-4 shrink-0">
                       <img 
                         src={man}
                         alt="Company"

@@ -4,11 +4,19 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import Index from './pages/index'
 import Roleselection from './pages/roleselection'
+import LoginSeeker from './pages/LoginSeeker';
+import RegisterSeeker from './pages/RegisterSeeker'
+import LoginCompany from './pages/LoginCompany'
+import RegisterCompany from './pages/RegisterCompany'
+import SeekerMainPage from './pages/SeekerMainPage'
+
+
 import Navbar from './components/Navbar'
+import NavbarSeeker from './components/NavbarSeeker'
 
 function AppContent() {
   const location = useLocation();
-  const hideNavbarRoutes = ['/roleselection'];
+  const hideNavbarRoutes = ['/roleselection', '/SeekerMainPage' ];
 
   return (
     <>
@@ -16,6 +24,11 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/roleselection" element={<Roleselection />} />
+        <Route path="/LoginSeeker" element={<LoginSeeker />} />
+        <Route path="/RegisterSeeker" element={<RegisterSeeker />} />
+        <Route path="/LoginCompany" element={<LoginCompany />} />
+        <Route path="/RegisterCompany" element={<RegisterCompany />} />
+        <Route path="/SeekerMainPage" element={<SeekerMainPage />} />
       </Routes>
     </>
   );
