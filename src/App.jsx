@@ -9,14 +9,18 @@ import RegisterSeeker from './pages/RegisterSeeker'
 import LoginCompany from './pages/LoginCompany'
 import RegisterCompany from './pages/RegisterCompany'
 import SeekerMainPage from './pages/SeekerMainPage'
+import ResumeBuilder from './pages/ResumeBuilder'
+import CompanyMainPage from './pages/CompanyMainPage'
+import JobPosting from './pages/JobPosting'
 
 
 import Navbar from './components/Navbar'
 import NavbarSeeker from './components/NavbarSeeker'
+import NavbarCompany from './components/NavbarCompany'
 
 function AppContent() {
   const location = useLocation();
-  const hideNavbarRoutes = ['/roleselection', '/SeekerMainPage' ];
+  const hideNavbarRoutes = ['/roleselection', '/SeekerMainPage', '/ResumeBuilder', '/CompanyMainPage', '/JobPosting'];
 
   return (
     <>
@@ -29,6 +33,9 @@ function AppContent() {
         <Route path="/LoginCompany" element={<LoginCompany />} />
         <Route path="/RegisterCompany" element={<RegisterCompany />} />
         <Route path="/SeekerMainPage" element={<SeekerMainPage />} />
+        <Route path="/ResumeBuilder" element={<ResumeBuilder />} />
+        <Route path="/CompanyMainPage" element={<CompanyMainPage />} />
+        <Route path="/JobPosting" element={<JobPosting />} />
       </Routes>
     </>
   );

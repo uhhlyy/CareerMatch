@@ -34,7 +34,7 @@ const LoginCompany = () => {
         showPopup("Login successful!", "success");
         setTimeout(() => {
           setFormData({ email: "", password: "" });
-          navigate("/ViewApplicants");
+          navigate("/CompanyMainPage");
         }, 1500);
       } else {
         showPopup("Invalid email or password.", "error");

@@ -295,7 +295,7 @@ export default function SeekerMainPage() {
         </div>
 
         <footer className="bg-gray-900 p-6 text-gray-400 text-center">
-          JobSwipe © 2025 — All rights reserved.
+          CareerMatch © 2025 — All rights reserved.
         </footer>
       </div>
     </div>
